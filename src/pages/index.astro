@@ -3,13 +3,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Projects from "../components/Projects.astro";
 import AboutMe from "../components/AboutMe.astro";
+
+const name = "Curtis Davies";
+const tagline = "Full-Stack Software Engineer & Agent Researcher";
 ---
 
-<BaseLayout title="Curtis Davies">
-    <Hero
-        name="Curtis Davies"
-        tagline="Full-Stack Software Engineer & Agent Researcher"
-    />
+<BaseLayout title={name + " - " + tagline}>
+    <Hero name={name} tagline={tagline} />
     <AboutMe />
     <Projects />
 </BaseLayout>
