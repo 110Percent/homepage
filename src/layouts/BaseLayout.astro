@@ -1,0 +1,38 @@
+---
+import "../styles/satoshi.css";
+import "../styles/global.css";
+
+interface Props {
+    title?: string;
+}
+
+const { title = "Portfolio" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" href="/favicon.ico" />
+        <title>{title}</title>
+        <meta
+            name="description"
+            content="Curtis Davies is a software engineer based in Ottawa, Canada."
+        />
+    </head>
+    <body>
+        <slot />
+    </body>
+    <script>
+        let scrollTimer: ReturnType<typeof setTimeout>;
+
+        document.addEventListener("scroll", () => {
+            document.documentElement.classList.add("scrolling");
+            clearTimeout(scrollTimer);
+            scrollTimer = setTimeout(() => {
+                document.documentElement.classList.remove("scrolling");
+            }, 400);
+        });
+    </script>
+</html>

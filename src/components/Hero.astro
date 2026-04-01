@@ -1,0 +1,106 @@
+---
+interface Props {
+    name: string;
+    tagline: string;
+}
+
+const { name, tagline }: Props = Astro.props;
+---
+
+<section class="hero">
+    <canvas class="bg" data-shader-bg aria-hidden="true"></canvas>
+
+    <div class="content">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>{name}</h1>
+        <p class="tagline">{tagline}</p>
+        <p class="intro">
+            I believe all software should be intuitive and secure. I create
+            user-centered products that prioritize clarity, performance, and
+            security.
+        </p>
+
+        <a href="#work" class="cta">See my work</a>
+    </div>
+</section>
+
+<script>
+    import { initWebglShaderBackground } from "../lib/webGlBackground";
+    import vertexSource from "../shaders/glow.vert?raw";
+    import fragmentSource from "../shaders/glow.frag?raw";
+
+    initWebglShaderBackground({
+        target: "[data-shader-bg]",
+        vertexSource,
+        fragmentSource
+    });
+</script>
+
+<style>
+    .hero {
+        position: relative;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        isolation: isolate;
+        background: #05070d;
+    }
+
+    .bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 0;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        width: min(720px, calc(100% - 2rem));
+        padding: 2rem;
+        border-radius: 24px;
+        background: rgb(10 12 18 / 0.45);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgb(255 255 255 / 0.12);
+        color: white;
+    }
+
+    .eyebrow {
+        margin: 0 0 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: clamp(3rem, 8vw, 6rem);
+        font-weight: bold;
+        line-height: 0.95;
+    }
+
+    .tagline {
+        margin: 0.75rem 0 1rem;
+        font-size: clamp(1.125rem, 2vw, 1.5rem);
+        opacity: 0.92;
+    }
+
+    .intro {
+        line-height: 1.7;
+        max-width: 60ch;
+    }
+
+    .cta {
+        display: inline-block;
+        margin-top: 1.25rem;
+        padding: 0.9rem 1.2rem;
+        border-radius: 999px;
+        text-decoration: none;
+        border: 1px solid currentColor;
+        color: inherit;
+    }
+</style>

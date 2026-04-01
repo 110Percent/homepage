@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
+import { projects } from "../data/projects.json";
+---
+
+<BaseLayout title="Curtis Davies">
+    <Hero
+        name="Curtis Davies"
+        tagline="Full-Stack Software Engineer & Agent Researcher"
+    />
+    <AboutMe />
+    <Projects projects={projects} />
+</BaseLayout>

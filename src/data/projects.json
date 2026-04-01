@@ -1,0 +1,10 @@
+{
+    "projects": [
+        {
+            "title": "Portfolio Website",
+            "description": "This site!",
+            "stack": ["Astro", "TypeScript", "WebGL"],
+            "href": "/"
+        }
+    ]
+}
