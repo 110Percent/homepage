@@ -1,5 +1,6 @@
 ---
-
+import { Icon } from "astro-icon/components";
+import Link from "./Link.astro";
 ---
 
 <section id="about" class="section">
@@ -9,9 +10,31 @@
             <h2>Who I am</h2>
 
             <p>
-                I'm a software engineer and graduate student based in Ottawa,
-                Canada. I like to design and build applications, mainly focusing
-                on intelligent agents and webapps.
+                I'm a software engineer and graduate student based in
+                <Icon name="mdi:map-marker" />
+                Ottawa, Canada. I focus on building systems that have to work under
+                real-world constraints: such as low latency, high scale, imperfect
+                data and other edge cases that show up in production. My work spans
+                full-stack applications, backend and infrastructure tooling, security-sensitive
+                systems and AI-driven software, with a focus on reliability, extensibility,
+                and clear system design.
+            </p>
+            <p>
+                I have experience across the stack in industry, from frontend
+                authentication and accessibility improvements at
+                <Link href="https://www.hubspot.com">HubSpot</Link> to backend safety
+                tooling and production database work, and earlier security automation
+                and reporting systems at
+                <Link href="https://www.bell.ca">Bell</Link>. Alongside that, my
+                graduate research at
+                <Link href="https://carleton.ca">Carleton University</Link> focuses
+                on AI agent architecture, explainability, and real-time systems, including
+                published work on debugging and understanding agent behaviour.
+            </p>
+            <p>
+                I'm especially interested in making building software that is
+                observable, robust and practical. It should work well today, at
+                least as well as it should work tomorrow, or in 5 years.
             </p>
         </div>
 

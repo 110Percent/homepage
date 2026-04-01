@@ -42,18 +42,34 @@ const { name, tagline }: Props = Astro.props;
         min-height: 100svh;
         display: grid;
         place-items: center;
-        overflow: hidden;
+        overflow: visible;
         isolation: isolate;
-        background: #05070d;
+        background: var(--bg);
     }
 
     .bg {
+        --fade-start: 72%;
         position: absolute;
-        inset: 0;
+        left: 0;
+        right: 0;
+        top: -10svh;
+        height: calc(100% + 30svh);
         width: 100%;
-        height: 100%;
         display: block;
         z-index: 0;
+        pointer-events: none;
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            rgb(0 0 0 / 1) 0%,
+            rgb(0 0 0 / 1) var(--fade-start),
+            rgb(0 0 0 / 0) 100%
+        );
+        mask-image: linear-gradient(
+            to bottom,
+            rgb(0 0 0 / 1) 0%,
+            rgb(0 0 0 / 1) var(--fade-start),
+            rgb(0 0 0 / 0) 100%
+        );
     }
 
     .content {

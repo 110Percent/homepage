@@ -1,5 +1,5 @@
 :root {
-    --bg: #0d0d0d;
+    --bg: #020306;
     --text: #f3f3f3;
     --surface: #161616;
     --border: rgb(255 255 255 / 0.08);
@@ -71,4 +71,9 @@ h2 {
 
 .section {
     padding: 6rem 1.5rem;
+}
+
+[data-icon] {
+    font-size: 0.9em;
+    vertical-align: baseline;
 }
