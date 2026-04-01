@@ -1,9 +1,35 @@
 {
+    "stackColours": {
+        "Astro": "#e4429a",
+        "JavaScript": "#f7df1e",
+        "TypeScript": "#3178c6",
+        "WebGL": "#FF3D34",
+        "Python": "#3776ab",
+        "OpenCV": "#8AD967",
+        "PyTorch": "#ee4c2c",
+        "C++": "#00599c",
+        "ROS": "#88C665",
+        "Docker": "#2496ed"
+    },
     "projects": [
         {
+            "title": "Lane Assist for Autonomous Vehicles",
+            "description": "A lane detection and keeping system for a self-driving car project, created with three colleagues for our university capstone. Runs within the CARLA vehicle simulator, as well as a physical driving robot.",
+            "stack": ["Python", "OpenCV", "PyTorch", "Docker", "C++", "ROS"],
+            "media": {
+                "type": "video",
+                "src": "/assets/lane-assist.mp4"
+            },
+            "href": "https://github.com/110Percent/lane-detection-keeping"
+        },
+        {
             "title": "Portfolio Website",
-            "description": "This site!",
-            "stack": ["Astro", "TypeScript", "WebGL"],
+            "description": "This site! Serves as a landing page for my work.",
+            "stack": ["Astro", "TypeScript", "JavaScript", "WebGL"],
+            "media": {
+                "type": "image",
+                "src": "/assets/homepage.jpg"
+            },
             "href": "/"
         }
     ]

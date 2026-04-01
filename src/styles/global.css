@@ -63,14 +63,12 @@ h2 {
     font-size: clamp(2rem, 4vw, 3rem);
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1rem;
+.section {
+    padding: 3rem 1.5rem;
 }
 
-.section {
-    padding: 6rem 1.5rem;
+h3 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 [data-icon] {
