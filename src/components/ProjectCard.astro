@@ -98,6 +98,7 @@ function getLinkIcon(href: string): string {
         border: 1px solid var(--border);
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         gap: 2rem;
         margin: 1rem 0;
     }
@@ -154,21 +155,25 @@ function getLinkIcon(href: string): string {
     }
 
     .text-section {
-        flex: 1;
+        flex-grow: 1.5;
+        max-width: calc(50% - 2rem);
         margin: auto;
     }
 
     .media-section {
         flex: 1;
-        border-radius: 12px;
-        border: 1px solid var(--border);
         display: flex;
+        max-width: calc(50% - 2rem);
+        justify-content: center;
+        align-items: center;
     }
 
     .media-section img,
     .media-section video {
-        width: 100%;
         border-radius: 12px;
+        border: 1px solid var(--border);
+        max-height: 300px;
+        max-width: 100%;
     }
 
     .card [data-icon] {
@@ -181,8 +186,17 @@ function getLinkIcon(href: string): string {
             flex-direction: column;
         }
 
+        .text-section {
+            max-width: 100%;
+        }
+
         .media-section {
             order: -1;
+            width: 100%;
+        }
+
+        .media-section img,
+        .media-section video {
             width: 100%;
         }
     }

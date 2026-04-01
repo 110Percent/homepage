@@ -9,7 +9,9 @@
         "PyTorch": "#ee4c2c",
         "C++": "#00599c",
         "ROS": "#88C665",
-        "Docker": "#2496ed"
+        "Docker": "#2496ed",
+        "Node.js": "#339933",
+        "PostgreSQL": "#336791"
     },
     "projects": [
         {
@@ -21,6 +23,15 @@
                 "src": "/assets/lane-assist.mp4"
             },
             "href": "https://github.com/110Percent/lane-detection-keeping"
+        },
+        {
+            "title": "Spinda Discord Bot",
+            "description": "A Discord bot providing utility and lookup commands for the Pokémon community, automatically pulling information from sources like Bulbapedia, Smogon and Pokémon Showdown. Previously used on the largest Pokémon server on Discord, with over 200,000 users.",
+            "stack": ["Node.js", "TypeScript", "PostgreSQL", "Docker"],
+            "media": {
+                "type": "image",
+                "src": "/assets/spinda.jpg"
+            }
         },
         {
             "title": "Portfolio Website",
