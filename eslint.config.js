@@ -13,8 +13,7 @@ export default defineConfig([
                 parser: tseslint.parser,
                 extraFileExtensions: [".astro"],
                 sourceType: "module",
-                ecmaVersion: "latest",
-                project: "./tsconfig.json"
+                ecmaVersion: "latest"
             }
         },
         rules: {
