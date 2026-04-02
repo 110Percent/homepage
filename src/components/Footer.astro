@@ -1,0 +1,37 @@
+---
+
+---
+
+<footer>
+    <div class="inner">
+        <div class="footer-content">
+            <p>Generated with Astro</p>
+            <p>With ❤️ from Canada</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer-content {
+        background-color: var(--background);
+        border-top: 1px solid var(--border);
+        padding: 4rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 4rem 0;
+    }
+
+    .footer-content p {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+    }
+
+    .footer-content p:not(:first-child)::before {
+        content: "•";
+        margin-right: 1rem;
+        color: var(--text-secondary);
+    }
+</style>
