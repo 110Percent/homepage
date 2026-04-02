@@ -11,7 +11,8 @@
         "ROS": "#88C665",
         "Docker": "#2496ed",
         "Node.js": "#339933",
-        "PostgreSQL": "#336791"
+        "PostgreSQL": "#336791",
+        "Emacs Lisp": "#c065db"
     },
     "projects": [
         {
@@ -25,7 +26,7 @@
             "href": "https://github.com/110Percent/lane-detection-keeping"
         },
         {
-            "title": "Spinda Discord Bot",
+            "title": "Spinda Pokémon Discord Bot",
             "description": "A Discord bot providing utility and lookup commands for the Pokémon community, aggregating information from Bulbapedia, Smogon and Serebii. Previously used on the largest Pokémon server on Discord, with over 200,000 users.",
             "stack": ["Node.js", "TypeScript", "PostgreSQL", "Docker"],
             "media": {
@@ -33,6 +34,16 @@
                 "src": "/assets/spinda.jpg"
             },
             "href": "https://gitlab.com/110Percent/spinda"
+        },
+        {
+            "title": "Chimacs",
+            "description": "My custom Emacs framework, built on top of straight.el. Aims to be minimal and modular, with a decent out-of-the-box experience. Created mainly for my own use for writing papers in LaTeX.",
+            "stack": ["Emacs Lisp"],
+            "media": {
+                "type": "image",
+                "src": "/assets/chimacs.jpg"
+            },
+            "href": "https://gitlab.com/110Percent/chimacs"
         },
         {
             "title": "Portfolio Website",
