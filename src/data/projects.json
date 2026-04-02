@@ -26,12 +26,13 @@
         },
         {
             "title": "Spinda Discord Bot",
-            "description": "A Discord bot providing utility and lookup commands for the Pokémon community, aggregating information from Bulbapedia, Smogon and Pokémon Showdown. Previously used on the largest Pokémon server on Discord, with over 200,000 users.",
+            "description": "A Discord bot providing utility and lookup commands for the Pokémon community, aggregating information from Bulbapedia, Smogon and Serebii. Previously used on the largest Pokémon server on Discord, with over 200,000 users.",
             "stack": ["Node.js", "TypeScript", "PostgreSQL", "Docker"],
             "media": {
                 "type": "image",
                 "src": "/assets/spinda.jpg"
-            }
+            },
+            "href": "https://gitlab.com/110Percent/spinda"
         },
         {
             "title": "Portfolio Website",

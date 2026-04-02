@@ -36,6 +36,8 @@ function getStackRgb(item: string): string {
 function getLinkIcon(href: string): string {
     if (href.includes("github.com")) {
         return "mdi:github";
+    } else if (href.includes("gitlab.com")) {
+        return "mdi:gitlab";
     } else {
         return "mdi:web";
     }
