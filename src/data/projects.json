@@ -12,12 +12,14 @@
         "Docker": "#2496ed",
         "Node.js": "#339933",
         "PostgreSQL": "#336791",
-        "Emacs Lisp": "#c065db"
+        "Emacs Lisp": "#c065db",
+        "HTML": "#e34c26",
+        "CSS": "#264de4"
     },
     "projects": [
         {
             "title": "Lane Assist for Autonomous Vehicles",
-            "description": "A lane detection and keeping system for a self-driving car project, created with three colleagues for our university capstone. Runs within the CARLA vehicle simulator, as well as a physical driving robot.",
+            "description": "A lane detection and keeping system for a self-driving car project, created with three colleagues for our university capstone. Uses a custom deep learning pipeline for lane detection. Runs within the CARLA vehicle simulator, as well as a physical driving robot.",
             "stack": ["Python", "OpenCV", "PyTorch", "Docker", "C++", "ROS"],
             "media": {
                 "type": "video",
@@ -28,7 +30,13 @@
         {
             "title": "Spinda Pokémon Discord Bot",
             "description": "A Discord bot providing utility and lookup commands for the Pokémon community, aggregating information from Bulbapedia, Smogon and Serebii. Previously used on the largest Pokémon server on Discord, with over 200,000 users.",
-            "stack": ["Node.js", "TypeScript", "PostgreSQL", "Docker"],
+            "stack": [
+                "Node.js",
+                "TypeScript",
+                "JavaScript",
+                "PostgreSQL",
+                "Docker"
+            ],
             "media": {
                 "type": "image",
                 "src": "/assets/spinda.jpg"
@@ -47,8 +55,15 @@
         },
         {
             "title": "Portfolio Website",
-            "description": "This site! Serves as a landing page for my work.",
-            "stack": ["Astro", "TypeScript", "JavaScript", "WebGL"],
+            "description": "This site! Serves as a landing page for my work. Also an excuse to learn how to use the Astro framework to make a static site.",
+            "stack": [
+                "Astro",
+                "TypeScript",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "WebGL"
+            ],
             "media": {
                 "type": "image",
                 "src": "/assets/homepage.jpg"
