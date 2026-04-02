@@ -7,7 +7,14 @@ export default defineConfig({
     integrations: [
         icon({
             include: {
-                mdi: ["map-marker", "github", "web"]
+                mdi: [
+                    "map-marker",
+                    "github",
+                    "gitlab",
+                    "web",
+                    "email-outline",
+                    "linkedin"
+                ]
             }
         })
     ]

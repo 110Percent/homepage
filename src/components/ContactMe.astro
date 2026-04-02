@@ -1,0 +1,42 @@
+---
+import ContactCard from "./ContactCard.astro";
+import { contacts } from "../data/contacts.json";
+
+interface Contact {
+    text: string;
+    linkText: string;
+    href: string;
+    icon: string;
+}
+
+const contactList = contacts as Contact[];
+---
+
+<section class="section">
+    <div class="inner">
+        <p class="eyebrow">Contact me</p>
+        <h2>Get in touch</h2>
+
+        <div class="contact-grid">
+            {
+                contactList.map((contact) => (
+                    <ContactCard
+                        text={contact.text}
+                        linkText={contact.linkText}
+                        href={contact.href}
+                        icon={contact.icon}
+                    />
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    .contact-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+</style>

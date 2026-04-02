@@ -1,0 +1,28 @@
+{
+    "contacts": [
+        {
+            "text": "Email",
+            "linkText": "curtis.davies@riseup.net",
+            "href": "mailto:curtis.davies@riseup.net",
+            "icon": "email-outline"
+        },
+        {
+            "text": "GitHub",
+            "linkText": "github.com/110Percent",
+            "href": "https://github.com/110Percent",
+            "icon": "github"
+        },
+        {
+            "text": "GitLab",
+            "linkText": "gitlab.com/110Percent",
+            "href": "https://gitlab.com/110Percent",
+            "icon": "gitlab"
+        },
+        {
+            "text": "LinkedIn",
+            "linkText": "linkedin.com/in/curtis-davies",
+            "href": "https://linkedin.com/in/curtis-davies",
+            "icon": "linkedin"
+        }
+    ]
+}
