@@ -8,6 +8,7 @@ interface Props {
 }
 
 const { title = "Portfolio" } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -16,6 +17,7 @@ const { title = "Portfolio" } = Astro.props;
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href={canonicalURL.href} />
         <title>{title}</title>
         <meta
             name="description"
